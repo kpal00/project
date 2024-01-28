@@ -1,0 +1,68 @@
+/* Add this to your style.css file */
+#bod{
+    margin: 0;
+    background-color: #ffeedd;
+}
+#scri
+{
+    color: blue;
+    font-size: x-large;
+     font-family:'Montez', cursive;
+}
+
+#btn1
+{
+    background-color: blue;
+    color:white;
+}
+#btn2
+{
+    background-color: blue;
+    color:white;
+}
+#col1
+{
+    background-color: beige;
+    text-align: center;
+}
+#col11
+{
+    background-color: #d8d8d8;
+}
+#col2
+{
+    background-color: beige;
+    text-align: center;
+    
+}
+#col22
+{
+    background-color: #d8d8d8;
+}
+#col3
+{
+    background-color: beige;
+    text-align: center;
+}
+#col33
+{
+    background-color: #d8d8d8;
+}
+#col4
+{
+    background-color: beige;
+    text-align: center;
+}
+#col44
+{
+    background-color: #d8d8d8;
+}
+#col5
+{
+    background-color: beige;
+    text-align: center;
+}
+#col55
+{
+    background-color: #d8d8d8;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+      <a class="navbar-brand" style="color: blue;">ScriBBler</a><br>
+      Explore, Imagine, Create
+       
+        <button class="btn btn-outline-success" id="myBtn" type="submit" style="margin-left:80%;" >Sign Up</button>
+        <button class="btn btn-outline-success" id="mySignInBtn"  type="submit" style="margin-left: 96%;">Sign in</button>
+      
+      </form>
+    </div>
+  </nav>
+
+<!-- The Modal -->
+<div id="mySignUpModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Get Started</p>
+    <form>
+      <label for="name">Name</label><br>
+      <input type="text" placeholder="Enter your name"><br><br>
+      <label for="username">Username</label><br>
+      <input type="text" placeholder="Enter your username"><br><br>
+      <label for="password">Password</label><br>
+      <input type="password" placeholder="Enter your password"><br><br>
+      <label for="confirm">Confirm Password</label><br>
+      <input type="password" placeholder="Re Enter your password"><br>
+      <button class="btn3" style="background-color: rgb(85, 174, 85); size: 40%;" onclick="validateAndSubmit()">Sign up</button>
+    </form>
+  </div>
+
+</div>
+
+
+<div id="mySignInModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Welcome Back!</p>
+    <form>
+      
+      <label for="username">Username</label><br>
+      <input type="text" placeholder="Enter your username"><br><br>
+      <label for="password">Password</label><br>
+      <input type="password" placeholder="Enter your password"><br><br>
+      <button class="btn3" style="background-color: rgb(85, 174, 85); size: 40%;" onclick="validateAndSubmit()">Sign in</button>
+      Not a Member?<a href="#" onclick="openSignUpModal()">Sign up</a>
+    </form>
+  </div>
+
+</div>
+ <!-- The Modal for Create Post -->
+ <div id="createPostModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCreatePostModal()">&times;</span>
+    <p>Pen Your Post</p>
+    <form>
+      <label for="postTitle">Title</label><br>
+      <input type="text" id="postTitle" placeholder="Enter title of your post"><br><br>
+
+      <label for="postContents">Contents</label><br>
+      <textarea id="postContents" placeholder="Enter the contents of your post"></textarea><br>
+
+      <button class="btn3" style="background-color: rgb(85, 174, 85); size: 40%;" onclick="createPost()">Create</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+  <div class="center">
+    <input type="button"  class="button1"  value="All Post" onclick="redirectToBlog()">
+        <input type="button"  class="button2"  value="Create Post" onclick="openCreatePostModal()">
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
